@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="icon" href="{% static 'images/logo-02.ico'%}">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>Revamp</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
+      <link rel="stylesheet" href="{% static 'css/s.css' %}">
+      <link rel="stylesheet" href="{% static 'css/style.css'%}">
+
+   </head>
+   <body>
+      <!--header section start -->
+      
+      <nav class="navbar navbar-expand-lg  new_navbar">
+         <div class="container">
+           <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static 'images/logo.png'%}" alt="" width="85px" height="80px"></a>
+           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+           </button>
+           <div class="collapse navbar-collapse" id="navbarSupportedContent">
+             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+               <li class="nav-item">
+                  <a class="nav-link" href="{% url 'about' %}">About Us</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="{% url 'menu' %}">Category</a>
+               </li>
+               <li class="nav-item">
+                  <a class="nav-link" href="{% url 'services' %}">Our Services</a>
+               </li>
+               
+               
+             </ul>
+             <div class="d-flex justify-content-center px-3 py-1 gap-3">
+               {% if request.user.is_authenticated %}
+               <a href="{% url 'log_out' %}">
+                  <button class="c-button c-button--gooey"> Logout
+                     <div class="c-button__blobs">
+                     <div></div>
+                     <div></div>
+                     <div></div>
+                     </div>
+                   </button>
+                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                     <defs>
+                       <filter id="goo">
+                         <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                         <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                         <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                       </filter>
+                     </defs>
+                   </svg>
+               </a>
+               
+               {% else %}
+               <a href="{% url 'login' %}">
+                  <button class="c-button c-button--gooey"> Sign In
+                     <div class="c-button__blobs">
+                     <div></div>
+                     <div></div>
+                     <div></div>
+                     </div>
+                   </button>
+                   <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                     <defs>
+                       <filter id="goo">
+                         <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                         <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                         <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                       </filter>
+                     </defs>
+                   </svg>
+               </a>
+               <a href="{% url 'register' %}"><button class="c-button c-button--gooey"> Sign Up
+                  <div class="c-button__blobs">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  </div>
+                </button>
+                <svg xmlns="http://www.w3.org/2000/svg" version="1.1" style="display: block; height: 0; width: 0;">
+                  <defs>
+                    <filter id="goo">
+                      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur"></feGaussianBlur>
+                      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -7" result="goo"></feColorMatrix>
+                      <feBlend in="SourceGraphic" in2="goo"></feBlend>
+                    </filter>
+                  </defs>
+                </svg>
+               </a>
+               
+               {% endif %}
+             </div>
+            
+             <div class="icon_ho">
+             
+            <a href="https://www.facebook.com/profile.php?id=100077226934568" target="_blank"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.instagram.com/pradeepnepal6/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+         
+            <a href="{% url 'contact' %}"><button class="custom-btn btn-1">Contact Us</button></a>
+
+             <!-- <form class="d-flex" role="search">
+               <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+               <button class="btn btn-outline-success" type="submit">Search</button>
+             </form> -->
+           </div>
+         </div>
+       </nav>
+            
+         
+      <!--header section end -->
+
+{% block content %}
+  
+{% endblock content %}
+
+
+      <!-- footer section start -->
+      <div class="footer_section layout_padding">
+        <div class="container">
+           <div class="row">
+              <div class="col-lg-3 col-sm-6">
+                 <h3 class="useful_text">About</h3>
+                 <p class="footer_text">Where luxury meets style. We're dedicated to crafting premium garments that embody elegance and sophistication. Each piece in our collection is meticulously designed and made from the finest materials, ensuring exceptional quality and timeless appeal. Discover the epitome of luxury with us</p>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                 <h3 class="useful_text">Revamp</h3>
+                 <div class="footer_menu">
+                    <ul>
+                       <li><a href="#">Home</a></li>
+                       <li><a href="#">About Us</a></li>
+                       <li><a href="#">Category</a></li>
+                       <li><a href="#">Our Services</a></li>
+                       <li><a href="#">Contact Us</a></li>
+                    </ul>
+                 </div>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                 <h1 class="useful_text">Legals</h1>
+                 <p class="footer_text">Terms & <br>conditions <br>Privacy Policy <br>Support</p></p>
+              </div>
+              <div class="col-lg-3 col-sm-6">
+                 <h1 class="useful_text">Contact Us</h1>
+                 <div class="location_text">
+                    <ul>
+                       <li>
+                          <a href="#">
+                          <i class="fa fa-map-marker" aria-hidden="true"></i><span class="padding_left_10">Address : Chabahil, Kathmandu</span>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="tel:+9779860097721">
+                          <i class="fa fa-phone" aria-hidden="true"></i><span class="padding_left_10">Call : +9779860097721</span>
+                          </a>
+                       </li>
+                       <li>
+                          <a href="mailto: pradiphate1@gmail.com">
+                          <i class="fa fa-envelope" aria-hidden="true"></i><span class="padding_left_10">Email : pradiphate1@gmail.com</span>
+                          </a>
+                       </li>
+                    </ul>
+                 </div>
+              </div>
+           </div>
+        </div>
+     </div>
+     <!-- footer section end -->
+     <!-- copyright section start -->
+     <div class="copyright_section">
+        <div class="container">
+           <p class="copyright_text">{{date}} All Rights Reserved. Design by <a href="#">Revamp</a></p>
+        </div>
+     </div>
+     <!-- copyright section end -->
+     <!-- Javascript files-->
+     <script src="{% static 'js/jquery.min.js' %}"></script>
+     <script src="{% static 'js/popper.min.js' %}"></script>
+     <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+     <script src="{% static 'js/jquery-3.0.0.min.js' %}"></script>
+     <script src="{% static 'js/plugin.js' %}"></script>
+     <script src="{% static 'js/s.js' %}"></script>
+
+     <!-- sidebar -->
+     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+     <script src="js/custom.js"></script>  
+     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+     <script src="https://kit.fontawesome.com/b52396679f.js" crossorigin="anonymous"></script>
+
+  </body>
+</html>     

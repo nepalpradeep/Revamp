@@ -1,0 +1,53 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+      <!-- services section start -->
+      <div class="services_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="services_taital " style='color:#db7927'> Our Services</h1>
+                  <p class="services_text">KNOWING OUR CUSTOMER NEEDS </p>
+                  <p class="services_text" style='color:pink'>Maximum design for every occasion.</p>
+               </div>
+            </div>
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main active">
+                        <div class="house_icon">
+                           <img src="{% static 'images/creating.png' %}" class="image_1">
+                           <img src="{% static 'images/bcreating.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Creating</h3>
+                        <p class="tation_text">We can create clothes from your ideas.</p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main">
+                        <div class="house_icon">
+                           <img src="{% static 'images/thinking.png' %}" class="image_1">
+                           <img src="{% static 'images/bthinking.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Thinking</h3>
+                        <p class="tation_text">We are thinking what type of clothes suit you. </p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main">
+                        <div class="house_icon">
+                           <img src="{% static 'images/catagoring.png' %}" class="image_1">
+                           <img src="{% static 'images/bcatagoring.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Categring</h3>
+                        <p class="tation_text">We have lots of clothing categories for everyone.</p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+{% endblock content %}

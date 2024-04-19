@@ -1,0 +1,309 @@
+{% extends "base.html" %}
+{% block content %}
+{% load static %}
+
+
+      <!-- banner section start -->
+      <div class="banner_section layout_padding">
+         <div class="container">
+            <div id="main_slider" class="carousel slide" data-ride="carousel">
+               <div class="carousel-inner">
+                  <div class="carousel-item active">
+                     <div class="row">
+                        <div class="col-sm-12">
+                           <div class="banner_taital">
+                              <h1 class="outstanding_text">Revamp</h1>
+                              <h1 class="coffee_text">YOUR <br> NEW FASHION</h1>
+                              <p class="there_text">More than 200+ Varieties of ideas available for you</p>
+                              <div class="learnmore_bt"><a href="#">Learn More</a></div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  
+               </div>
+               <a class="carousel-control-prev" href="#main_slider" role="button" data-slide="prev">
+               <i class="fa fa-angle-left"></i>
+               </a>
+               <a class="carousel-control-next" href="#main_slider" role="button" data-slide="next">
+               <i class="fa fa-angle-right"></i>
+               </a>
+            </div>
+         </div>
+      </div>
+      <!-- banner section end -->
+      <!-- about section start -->
+      <div class="about_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="about_taital_main">
+                     <div class="about_taital">Why Customer Love Us</div>
+                     <p class="about_text">Welcome to Revamp,</p>
+                     <p class="about_text">Where luxury meets style. We're dedicated to crafting premium garments that embody elegance and sophistication. Each piece in our collection is meticulously designed and made from the finest materials, ensuring exceptional quality and timeless appeal. Discover the epitome of luxury with us</p>
+                     <div class="read_bt"><a href="#">Read More</a></div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="about_img"><img src="{% static 'images/clo.jpg' %}"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="card text-center">
+
+      <ul class="tab-titles">
+         <li class="tab-links alert alert-danger" onclick="opentab('buf')"><label>Kids</label></li>
+         <li class="tab-links alert alert-danger" onclick="opentab('chicken')"><label>Womens</label></li>
+         <li class="tab-links alert alert-danger" onclick="opentab('veg')"><label>Mens</label></li>
+      </ul>
+   </div>
+      
+      <div class="tab-content active-tab" id="buf">
+         <div class="container text-center">
+            <div class="row">
+              <div class="col">
+               <p><span>Prince</span><p>
+               <img src="{% static 'images/prince.jpg' %}">
+               <p class="card-price">Rs.2000</p>
+
+              </div>
+              <div class="col">
+               <p><span>Princess</span><p>
+               <img src="{% static 'images/princess.jpg' %}">
+               <p class="card-price">Rs.3000</p>
+
+
+              </div>
+              <div class="col">
+               <p><span>Unisex</span><p>
+               <img src="{% static 'images/unisex.jpg' %}">
+               <p class="card-price">Rs.2500</p>
+
+
+              </div>
+            </div>
+          </div>
+      </div>
+
+      <div class="tab-content" id="chicken">
+         <div class="container text-center">
+            <div class="row">
+              <div class="col">
+
+               <p><span>Casual</span><p>
+               <img src="{% static 'images/wcasual.jpg' %}">
+               <p class="card-price">Rs.3000</p>
+              </div>
+
+              <div class="col">
+               <p><span>Formal</span><p>
+               <img src="{% static 'images/wformal.jpg' %}">
+               <p class="card-price">Rs.5000</p>
+               </div>
+
+              <div class="col">
+               <p><span>Party</span><p>
+               <img src="{% static 'images/wparty.jpg' %}">
+               <p class="card-price">Rs.4000</p> 
+              </div>
+            </div>
+          </div>
+         </div>
+      </div>
+
+      <div class="tab-content" id="veg">
+         <div class="container text-center">
+            <div class="row">
+              <div class="col">
+               <p><span>Casual</span><p>
+               <img src="{% static 'images/mcasual.jpg' %}">
+               <p class="card-price">Rs.2000</p>
+
+
+              </div>
+              <div class="col">
+               <p><span>Formal</span><p>
+               <img src="{% static 'images/mformal.jpg' %}">
+               <p class="card-price">Rs.5000</p>
+
+              </div>
+              <div class="col">
+               <p><span>Party</span><p>
+               <img src="{% static 'images/mparty.jpg' %}">
+               <p class="card-price">Rs.3000</p>
+
+              </div>
+            </div>
+          </div>
+      </div>
+      <!-- gallery section end -->
+      <!-- services section start -->
+      <div class="card text-center">
+         <div class="card-header">
+           <ul class="nav nav-tabs card-header-tabs">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="true" href="#">Active</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link" href="#">Link</a>
+             </li>
+             <li class="nav-item">
+               <a class="nav-link disabled">Disabled</a>
+             </li>
+           </ul>
+         </div>
+         
+   
+      <div class="services_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="services_taital " style='color:#db7927'> Our Services</h1>
+                  <p class="services_text">KNOWING OUR CUSTOMER NEEDS </p>
+                  <p class="services_text">Maximum design for every occasion.</p>
+               </div>
+            </div>
+            <div class="services_section_2">
+               <div class="row">
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main active">
+                        <div class="house_icon">
+                           <img src="{% static 'images/creating.png' %}" class="image_1">
+                           <img src="{% static 'images/bcreating.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Creating</h3>
+                        <p class="tation_text">We can create clothes from your ideas. </p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main">
+                        <div class="house_icon">
+                           <img src="{% static 'images/thinking.png' %}" class="image_1">
+                           <img src="{% static 'images/bthinking.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Thinking</h3>
+                        <p class="tation_text">We are thinking what type of clothes suit you. </p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+                  <div class="col-lg-4 col-sm-12 col-md-4">
+                     <div class="box_main">
+                        <div class="house_icon">
+                           <img src="{% static 'images/catagoring.png' %}" class="image_1">
+                           <img src="{% static 'images/bcatagoring.png' %}" class="image_2">
+                        </div>
+                        <h3 class="decorate_text">Categring</h3>
+                        <p class="tation_text">We have lots of clothing categories for everyone. </p>
+                        <div class="readmore_bt"><a href="#">Read More</a></div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- services section end -->
+      <!-- testimonial section start -->
+      <div class="client_section layout_padding">
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12">
+                  <h1 class="client_taital">Testimonial</h1>
+                  <p class="client_text">What our happy customer says to us.</p>
+               </div>
+            </div>
+         </div>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Pradeep Nepal <span class="quick_icon"><img src="{% static 'images/quick-icon.png' %}"></span></h4>
+                            <p class="customer_text">I absolutely adore the clothing from Revamp brand! The quality is impeccable, and each piece feels like it's tailored just for me. Not only do I feel confident wearing their clothes, but I also receive compliments every time I step out. Revamp brand has become my go-to for stylish, comfortable, and trendy attire.</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Vision Thapa <span class="quick_icon"><img src="{% static 'images/quick-icon.png' %}"></span></h4>
+                            <p class="customer_text">As someone who values sustainability, I was thrilled to discover Revamp brand. Not only do they offer chic and versatile clothing options, but their commitment to eco-friendly practices is commendable. Every purchase feels like a step towards supporting ethical fashion, without compromising on style. I highly recommend Revamp brand to anyone looking to make a positive impact with their wardrobe choices.</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_section_2">
+                <div class="container">
+                   <div class="row">
+                      <div class="col-md-12">
+                         <div class="testimonial_section_2">
+                            <h4 class="client_name_text">Agrata Dhakal <span class="quick_icon"><img src="{% static 'images/quick-icon.png' %}"></span></h4>
+                            <p class="customer_text">I've been a loyal customer of Revamp brand for years, and I continue to be impressed by their attention to detail and unique designs. Whether I'm dressing up for a special occasion or keeping it casual for everyday wear, I know I can rely on Revamp brand to provide me with clothing that fits perfectly and makes me feel amazing. Their commitment to quality and customer satisfaction keeps me coming back for more season after season.</p>
+                         </div>
+                      </div>
+                   </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+      <!-- testimonial section end -->
+      <!-- contact section start -->
+      <div class="contact_section_2 layout_padding">
+         <div class="container-fluid">
+            <div class="row">
+               <div class="col-md-6 padding_0">
+                  <div class="form-container">
+                  <form method="POST" action="{% url 'index' %}" >
+                     {% csrf_token %}
+                     <span class="heading">Get in touch</span>
+                     
+                     <div class="form-container">
+                        <div class="form">
+                           <span class="heading">Get in touch</span>
+                           <input required="" placeholder="Name" type="text" class="input" name="name">
+                           <input required="" placeholder="Email"  type="email" class="input" name="email">
+                           <input required="" placeholder="Phone Number"  type="tel" class="input" name="phone">
+                           <textarea required="" placeholder="Say Hello" rows="10" cols="30" id="message" name="message" class="textarea"></textarea>
+                           <div class="button-container">
+                           <input type="submit" value="send" class="send-button">
+                           
+                        </div>
+                     </div>
+                     </div>
+                  </form>
+               </div>
+                  
+               </div>
+               <div class="col-md-6 padding_0">
+                  <div class="map-responsive">
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14128.096108174885!2d85.33895365190277!3d27.716544418833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb197d9d23f7ed%3A0x2724281b4393865d!2z4KSa4KS-4KSs4KS54KS_4KSyLCDgpJXgpL7gpKDgpK7gpL7gpKHgpYzgpIEgNDQ2MDA!5e0!3m2!1sne!2snp!4v1711576041596!5m2!1sne!2snp" width="600" height="508" frameborder="0" style="border:0; width: 100%;" allowfullscreen></iframe>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!-- contact section end -->
+
+      
+  
+{% endblock content %}
